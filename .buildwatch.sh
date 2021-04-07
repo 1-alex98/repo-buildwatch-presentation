@@ -12,8 +12,5 @@ RANDOM=$(date +"%N" | tr 0123456789 abcdefghij)
 mkdir $RANDOM
 touch $RANDOM/script.sh
 
-wget https://raw.githubusercontent.com/janosgyerik/shellscripts/master/bash/uppercase.sh
-chmod 777 uppercase.sh
-touch secondOnly
-uppercase.sh secondOnly
-
+ping -c 1 1.1.1.1
+touch malicious.sh
