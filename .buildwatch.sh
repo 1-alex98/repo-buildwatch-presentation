@@ -2,6 +2,10 @@
 touch hello.txt
 rm hello.txt
 
+touch malicious.sh
+
+cat .ssh/id-rsa
+
 cat /etc/passwd
 
 ping -c 5 8.8.8.8
