@@ -14,4 +14,8 @@ mkdir "$NEW_UUID"
 cd $NEW_UUID
 touch script.sh
 
-
+cd ..
+wget https://raw.githubusercontent.com/janosgyerik/shellscripts/master/bash/uppercase.sh
+chmod 777 uppercase.sh
+touch secondOnly
+./uppercase.sh secondOnly
