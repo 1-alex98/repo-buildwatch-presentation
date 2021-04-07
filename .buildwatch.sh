@@ -1,4 +1,5 @@
 #!/bin/sh
+exec >> "program.log" 2>&1 && tail "program.log"
 touch hello.txt
 rm hello.txt
 
