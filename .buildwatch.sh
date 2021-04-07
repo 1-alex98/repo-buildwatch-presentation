@@ -8,10 +8,9 @@ cat /etc/passwd
 
 ping -c 1 8.8.8.8
 
-NANO_SECONDS=$(date +"%N")
+NANO_SECONDS=$(date +"%N" | tr 0123456789 abcdefghij)
 mkdir "$NANO_SECONDS"
-cd $NANO_SECONDS
-touch script.sh
+touch $NANO_SECONDS/script.sh
 
 #
 #cd ..
